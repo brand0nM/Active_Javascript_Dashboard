@@ -12,7 +12,7 @@ A server must be initiated for plotly to function; In development I ran a local 
 <br />
 Though a gitpages deployment can be viewed here. 
 <br />
- https://brand0nm.github.io/Active_Javascript_Dashboard/
+https://brand0nm.github.io/Javascript-Dashboard/
  
  ## Summary
 We were successful in creating a javascript dashboard; these functions read JSON data, plot the desired results, and listen for any changes in our patient selection- if changes, then results will replot. To further improve this dashboard we could beautify the css.
