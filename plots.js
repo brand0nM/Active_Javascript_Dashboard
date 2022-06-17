@@ -54,23 +54,23 @@ function buildCharts(sample) {   // Create the buildCharts function.
     var gaugeData = [{domain: { x: [0, 1], y: [0, 1] }, value: washFreq,
       title: {text: "Scrubs per Week"}, type: "indicator", mode: "gauge+number",
       gauge: {
-        bar: {color:'black'},
+        bar: {color:'#262626'},
         axis: {range: [0,10]},
-        steps: [{range: [0,2], color: "red"},{range: [2,4], color: "orange"},
-          {range: [4,6], color: "yellow"},{range: [6,8], color: "lightgreen"},
-          {range: [8,10], color: "green"}]
+        steps: [{range: [0,2], color: "#ff0000"},{range: [2,4], color: "#ff6666"},
+          {range: [4,6], color: "#ffff33"},{range: [6,8], color: "#80ff80"},
+          {range: [8,10], color: '#00cc00'}]
       }
     }];
 
     var barLayout = {
-      title: 'Top 10 Bacteria Cultures Found'
+      title: 'Top 10 Bacteria Cultures Found',paper_bgcolor:"rgb(0,0,0,0)",plot_bgcolor:"rgb(0,0,0,0)"
     };
     var bubbleLayout = {
-      title: 'Bacteria Cultures Per Sample',
-      xaxis: {title:'OTU ID'}
+      title: 'Bacteria Cultures Per Sample',xaxis: {title:'OTU ID'},paper_bgcolor:"rgb(0,0,0,0)",
+      plot_bgcolor:"rgb(0,0,0,0)"
     };
     var gaugeLayout = { 
-      title: 'Belly Button Washing Frequency'
+      title: 'Belly Button Washing Frequency',paper_bgcolor:"rgb(0,0,0,0)",plot_bgcolor:"rgb(0,0,0,0)"
     };
 
     Plotly.newPlot("bar", barData, barLayout);  // Plotly to plot bar
